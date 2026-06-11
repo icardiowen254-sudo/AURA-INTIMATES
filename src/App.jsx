@@ -66,7 +66,7 @@ export default function App() {
   const whatsappLink = 'https://wa.me/254742184483?text=Hi%20Aura%20Intimates%2C%20I%20need%20help%20with%20my%20order.';
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <CartProvider>
         <WishlistProvider>
           <div className="min-h-screen bg-cream flex flex-col">
